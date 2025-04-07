@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "poc-todo-front": {
+    "ab-poc-todo-front": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/poc-todo-front",
+            "outputPath": "dist/ab-poc-todo-front",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "poc-todo-front:build:production"
+              "buildTarget": "ab-poc-todo-front:build:production"
             },
             "development": {
-              "buildTarget": "poc-todo-front:build:development"
+              "buildTarget": "ab-poc-todo-front:build:development"
             }
           },
           "defaultConfiguration": "development"
